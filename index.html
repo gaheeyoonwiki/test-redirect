@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="deepl01.html">DeepL 등록하기</a>
+      </li>
+    </ul>
+  </body>
+  <script>
+    const urlParams = new URL(location.href).searchParams;
+    const page = urlParams.get("page");
+
+    if (page == "deepl01") window.location.href = "deepl01.html";
+  </script>
+</html>
